@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "rvkrNw/7My+tB+CIMFSP96ZcCCPs08d9qh2NL7gzb14J4XweCUuTxZ4BUVleUSyT+7/fVVdGlGE6lzAVdrI4ug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kadirocsoy\\Desktop\\github\\OrnekMuavinCore\\OrnekMuavinCore\\OrnekMuavinCore\\OrnekMuavinCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kadirocsoy\\.nuget\\packages\\kadirocsoy.muavincode\\2.7.5\\kadirocsoy.muavincode.2.7.5.nupkg.sha512",
+    "C:\\Users\\kadirocsoy\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\kadirocsoy\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\kadirocsoy\\.nuget\\packages\\system.drawing.common\\5.0.1\\system.drawing.common.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

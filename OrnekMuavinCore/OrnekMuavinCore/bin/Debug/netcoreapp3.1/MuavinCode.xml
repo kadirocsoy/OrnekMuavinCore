@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MuavinCode</name>
+    </assembly>
+    <members>
+        <member name="T:MuavinCode.KaynakMail">
+            <summary>
+            MailGonder methodunda istenen mail giriş bilgilerinin class'ı
+            </summary>
+        </member>
+        <member name="P:MuavinCode.KaynakMail.girisemail">
+            <summary>
+            Giriş yapılacak e-mail adresi
+            </summary>
+        </member>
+        <member name="P:MuavinCode.KaynakMail.girissifresi">
+            <summary>
+            Giriş yapılacak e-mail adresinin şifresi
+            </summary>
+        </member>
+        <member name="P:MuavinCode.KaynakMail.hostadres">
+            <summary>
+            Giriş yapılacak e-mail adresinin host adresi
+            </summary>
+        </member>
+        <member name="P:MuavinCode.KaynakMail.port">
+            <summary>
+            Giriş yapılacak e-mail adresinin bağlı olduğu port
+            </summary>
+        </member>
+        <member name="P:MuavinCode.KaynakMail.kimdenmailadres">
+            <summary>
+            Gönderen e-mail adresi
+            </summary>
+        </member>
+        <member name="P:MuavinCode.KaynakMail.kimdenisim">
+            <summary>
+            Gönderen adı soyadı
+            </summary>
+        </member>
+        <member name="T:MuavinCode.Muavin">
+            <summary>
+            Yardımcı işlemlerin bulunduğu class
+            </summary>
+        </member>
+        <member name="M:MuavinCode.Muavin.UrlDonustur(System.String)">
+            <summary>
+            Girilen string ifade içerisindeki türkçe karakterleri ingilizce karakterine dönüştür ve adres çubuğunda hataya yol açacak karakterleri temizler.
+            </summary>
+            <param name="url">Türkçe karakterlerin İngilizce karaktelere dönüştürülmesini istediğiniz string değeri ifade eder.</param>
+            <returns>Gerekli işlemleri yaptıktan sonra geriye string deger döndürür.</returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.DosyaEkle(System.IO.Stream,System.String,System.String)">
+            <summary>
+            Stream formatındaki dosyanızı belirttiğiniz dosya yoluna Guid methodu ile rastgele isimde kayıt etmenizi sağlar.
+            </summary>
+            <param name="stDosya">Dosyanızın Stream hâlini ekleyiniz.</param>
+            <param name="uzanti">Dosyanızın uzantısını yazınız.</param>
+            <param name="dosyayolu">Dosyanızı kayıt etmek istediğiniz dosya yolunu yazınız.</param>
+            <returns>Dosyanız kayıt edilirse geriye dosya adı döndürür. Kayıt edilmezse boş bir string değer döner.</returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.DosyaGuncelle(System.IO.Stream,System.String,System.String,System.String)">
+            <summary>
+            Eski dosyanızı silerek Stream formatındaki yeni dosyanızı Guid methodu ile rastgele isimde belirttiğiniz dosya yoluna kayıt etmenizi sağlar.
+            </summary>
+            <param name="stDosya">Dosyanızın Stream hâlini ekleyiniz.</param>
+            <param name="uzanti">Dosyanızın uzantısını yazınız.</param>
+            <param name="dosyayolu">Dosyanızı kayıt etmek istediğiniz dosya yolunu yazınız.</param>
+            <param name="dosyaadi">Silinmesini istediğiniz dosyanın adını yazınız.</param>
+            <returns>Dosyanız kayıt edilirse geriye dosya adı döndürür. Kayıt edilmezse eski dosya adınızı geri döndürür.</returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.CokluDosyaEkle(System.Collections.Generic.List{System.IO.Stream},System.String,System.String)">
+            <summary>
+            Birden fazla dosyayı aynı dosya yoluna kayıt etmenizi sağlar.
+            </summary>
+            <param name="stDosyaList">Dosyalarınızın Stream liste adını yazınız.</param>
+            <param name="uzanti">Dosyalarınızın ortak uzantısını yazınız.</param>
+            <param name="dosyayolu">Dosyaları kayıt etmek istediğiniz dosya yolunu yazınız.</param>
+            <returns>Eğer dosyalarınızın kayıt işlemi başarılı olursa geriye dosya isimleriniz olduğun string listesi döndürür. Başarılı değilse boş bir string listesi döndürür. </returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.CokluDosyaEkle(System.Collections.Generic.List{System.IO.Stream},System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Birden fazla dosyayı aynı dosya yoluna kayıt etmenizi sağlar.
+            </summary>
+            <param name="stDosyaList">Dosyalarınızın Stream liste adını yazınız.</param>
+            <param name="uzanti">Dosyalarınızın uzantılarının string listesini yazınız.</param>
+            <param name="dosyayolu">Dosyaları kayıt etmek istediğiniz dosya yolunu yazınız.</param>
+            <returns>Eğer dosyalarınızın kayıt işlemi başarılı olursa geriye dosya isimleriniz olduğun string listesi döndürür. Başarılı değilse boş bir string listesi döndürür. </returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.ResimEkle(System.IO.Stream,System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            Resim dosyanızı istediğiniz genişlikte(px) istediğiniz dosya yoluna eklemenizi sağlar.
+            </summary>
+            <param name="stResim">Resim dosyanızın Stream adını yazınız.</param>
+            <param name="uzanti">Resim dosyanızın uzantısını yazınız.</param>
+            <param name="dosyayolu">Resim dosyanızı kayıt etmek istediğiniz dosya yolunu yazınız.</param>
+            <param name="kapasite">Resim dosyanızın kapasitesinde azaltma işlemi uygulanmasını isterseniz true, istemezseniz false yazınız. Eğer yüklemek istediğiniz resim arka planı transparan ise arka planı siyah renk yapacaktır.</param>
+            <param name="genislik">Resim dosyanızın olmasını istediğiniz genişlik değerini(px) yazınız. Eğer resim dosyanızın genişliği istediğiniz genişlikten büyük ise yükseklik hesaplaması yapılacaktır. Resim dosyanızda orjinal boyutları değiştirmek istemezseniz "0" yazınız.</param>
+            <returns>Resim dosyanızın kayıt edilmesi durumunda geriye string değerinde resim adınız dönecektir. Kayıt edilmemiş ise boş bir string değer dönecektir.</returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.ResimGuncelle(System.IO.Stream,System.String,System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            Eski resim dosyasını silip yerine yeni resim dosyanızı istediğiniz dosya yoluna eklemenizi sağlar.
+            </summary>
+            <param name="stResim">Resim dosyanızın Stream adını yazınız.</param>
+            <param name="uzanti">Resim dosyanızın uzantısını yazınız.</param>
+            <param name="dosyayolu">Resim dosyanızı kayıt etmek istediğiniz dosya yolunu yazınız.</param>
+            <param name="resimadi">Silmek istediğiniz resim dosyasının adını yazınız.</param>
+            <param name="kapasite">Resim dosyanızın kapasitesinde azaltma işlemi uygulanmasını isterseniz true, istemezseniz false yazınız. Eğer yüklemek istediğiniz resim arka planı transparan ise arka planı siyah renk yapacaktır.</param>
+            <param name="genislik">Resim dosyanızın olmasını istediğiniz genişlik değerini(px) yazınız. Eğer resim dosyanızın genişliği istediğiniz genişlikten büyük ise yükseklik hesaplaması yapılacaktır. Resim dosyanızda orjinal boyutları değiştirmek istemezseniz "0" yazınız.</param>
+            <returns>Resim dosyanızın kayıt edilmesi durumunda geriye string değerinde resim adınız dönecektir. Kayıt edilmemiş ise boş bir string değer dönecektir.</returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.CokluResimEkle(System.Collections.Generic.List{System.IO.Stream},System.String,System.String,System.Boolean,System.Int32)">
+            <summary>
+            Birden fazla resim dosyanızı istediğiniz genişlikte(px) istediğiniz dosya yoluna eklemenizi sağlar.
+            </summary>
+            <param name="stResimList">Resim dosyalarınızın Stream Liste adını yazınız.</param>
+            <param name="uzanti">Resim dosyalarınızın ortak uzantısını yazınız.</param>
+            <param name="dosyayolu">Resim dosyalarınızı kayıt etmek istediğiniz dosya yolunu yazınız.</param>
+            <param name="kapasite">Resim dosyanızın kapasitesinde azaltma işlemi uygulanmasını isterseniz true, istemezseniz false yazınız. Eğer yüklemek istediğiniz resim arka planı transparan ise arka planı siyah renk yapacaktır.</param>
+            <param name="genislik">Resim dosyanızın olmasını istediğiniz genişlik değerini(px) yazınız. Eğer resim dosyanızın genişliği istediğiniz genişlikten büyük ise yükseklik hesaplaması yapılacaktır. Resim dosyanızda orjinal boyutları değiştirmek istemezseniz "0" yazınız.</param>
+            <returns>Resim dosyalarınızın kayıt edilmesi durumunda geriye resim isimlerinin bulunduğu string listesi dönecektir. Kayıt edilmemiş ise boş bir string listesi dönecektir.</returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.CokluResimEkle(System.Collections.Generic.List{System.IO.Stream},System.Collections.Generic.List{System.String},System.String,System.Boolean,System.Int32)">
+            <summary>
+            Birden fazla resim dosyanızı istediğiniz genişlikte(px) istediğiniz dosya yoluna eklemenizi sağlar.
+            </summary>
+            <param name="stResimList">Resim dosyalarınızın Stream Liste adını yazınız.</param>
+            <param name="uzanti">Resim dosyalarınızın uzantılarının olduğu string listesinin adını yazınız.</param>
+            <param name="dosyayolu">Resim dosyalarınızı kayıt etmek istediğiniz dosya yolunu yazınız.</param>
+            <param name="kapasite">Resim dosyanızın kapasitesinde azaltma işlemi uygulanmasını isterseniz true, istemezseniz false yazınız. Eğer yüklemek istediğiniz resim arka planı transparan ise arka planı siyah renk yapacaktır.</param>
+            <param name="genislik">Resim dosyanızın olmasını istediğiniz genişlik değerini(px) yazınız. Eğer resim dosyanızın genişliği istediğiniz genişlikten büyük ise yükseklik hesaplaması yapılacaktır. Resim dosyanızda orjinal boyutları değiştirmek istemezseniz "0" yazınız.</param>
+            <returns>Resim dosyalarınızın kayıt edilmesi durumunda geriye resim isimlerinin bulunduğu string listesi dönecektir. Kayıt edilmemiş ise boş bir string listesi dönecektir.</returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.MailGonder(MuavinCode.KaynakMail,System.String,System.String,System.String[])">
+            <summary>
+            Mail gönderme işlemi yapmanızı sağlar.
+            </summary>
+            <param name="km">Gönderen e-mail bilgilerinin bulunduğu KaynakMail class'ı</param>
+            <param name="konu">Gönderilecek e-mail'in konu başlığı</param>
+            <param name="mesaj">Gönderilecek e-mail'in içeriği</param>
+            <param name="kimlere">E-mail'in gönderileceği bir veya birden fazla e-mail adresi</param>
+            <returns></returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.ResimOrjinYonu(System.IO.Stream)">
+            <summary>
+            Resminizde bir yön değişmesi(orientation) söz konusu ise orjinal yönüne çevirmenizi sağlar.
+            </summary>
+            <param name="st">Resminizin stream hâli</param>
+            <returns></returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.BoyutaDonustur(System.Int64)">
+            <summary>
+            long tipindeki byte sayı değerinizin boyutunu öğrenmenizi sağlar.
+            </summary>
+            <param name="byteCount">byte sayı değerini yazınız.</param>
+            <returns>string tipinde geriye boyut değerini döndürür.</returns>
+        </member>
+        <member name="M:MuavinCode.Muavin.ListeDonustur``1(System.Data.DataTable)">
+            <summary>
+            DataTable tipindeki verilerinizi istediğiniz sınıf listesine dönüştürmenizi sağlar.
+            </summary>
+            <typeparam name="T">Dönüştürmek istediğiniz sınıf tipi</typeparam>
+            <param name="dt">Dönüşmesini istediğiniz DataTable</param>
+            <returns>Geriye istediğiniz sınıf tipinde liste döndürecektir.</returns>
+        </member>
+    </members>
+</doc>
