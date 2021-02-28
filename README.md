@@ -2,7 +2,7 @@ Web projelerimizde sıklıkla kullandığımız kodları tekrar tekrar yazmak ye
 
 Bu proje MuavinCode kütüphanesinin <b>.NET CORE</b> projelerinde nasıl kullanıldığını göstermek için örnek bir projedir.<br>
 Kütüphane hakkında daha detaylı bilgi almak için aşağıdaki linki tıklayabilirsiniz.<br>
-http://kadirocsoy.com/muavincode-kutuphanesi-asp-net-mvc-ve-core-projelerinde-nasil-kullanilir
+http://kadirocsoy.com/yazi/muavincode-kutuphanesi-asp-net-mvc-ve-core-projelerinde-nasil-kullanilir
 
 MuavinCode Kütüphanesini indirmek için aşağıdaki linke tıklayabilirsiniz.<br>
 https://www.nuget.org/packages/KadirOcsoy.MuavinCode
